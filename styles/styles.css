@@ -1,15 +1,19 @@
-body {
+:root {
   --color-slate-900: rgb(31, 49, 79);
   --color-slate-500: rgb(104, 119, 141);
   --color-slate-300: rgb(213 225, 239);
+  --color-white-900: rgb(255, 255, 255);
 
   --spacing-500: 40px;
   --spacing-300: 24px;
   --spacing-200: 16px;
 
-  --text-preset-1: normal bold 22px/1.2 "Outfit", sans-serif;
-  --text-preset-2: normal 400 15px/1.4 "Outfit", sans-serif;
+  --font-family: "Outfit", sans-serif;
+  --text-preset-1: normal bold 22px/1.2 var(--font-family);
+  --text-preset-2: normal 400 15px/1.4 var(--font-family);
+}
 
+body {
   background-color: var(--color-slate-300);
   margin: 0;
   display: flex;
@@ -18,12 +22,17 @@ body {
   min-height: 100vh;
 }
 
+main {
+  margin: 0 auto;
+  padding: 1rem;
+}
+
 #qr-card {
   max-width: 20rem;
   padding: var(--spacing-200) var(--spacing-200) var(--spacing-500)
     var(--spacing-200);
-  background-color: white;
-  filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.0477));
+  background-color: var(--color-white-900);
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.0477);
   border-radius: 20px;
   margin: auto;
   text-align: center;
