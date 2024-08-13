@@ -1,0 +1,54 @@
+body {
+  --color-slate-900: rgb(31, 49, 79);
+  --color-slate-500: rgb(104, 119, 141);
+  --color-slate-300: rgb(213 225, 239);
+
+  --spacing-500: 40px;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
+
+  --text-preset-1: normal bold 22px/1.2 "Outfit", sans-serif;
+  --text-preset-2: normal 400 15px/1.4 "Outfit", sans-serif;
+
+  background-color: var(--color-slate-300);
+  margin: 0;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#qr-card {
+  max-width: 20rem;
+  padding: var(--spacing-200) var(--spacing-200) var(--spacing-500)
+    var(--spacing-200);
+  background-color: white;
+  filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.0477));
+  border-radius: 20px;
+  margin: auto;
+  text-align: center;
+}
+
+#qr-card img {
+  max-width: 100%;
+  border-radius: 10px;
+  vertical-align: top;
+}
+
+#qr-card-details {
+  padding: 0 var(--spacing-200);
+}
+
+#qr-card-details h1 {
+  font: var(--text-preset-1);
+  color: var(--color-slate-900);
+  margin-top: var(--spacing-300);
+  margin-bottom: var(--spacing-200);
+}
+
+#qr-card-details p {
+  font: var(--text-preset-2);
+  color: var(--color-slate-500);
+  margin-bottom: 0;
+  letter-spacing: 0.2px;
+}
